@@ -1,0 +1,29 @@
+<app-titulo [titulo]="title"></app-titulo>
+
+<!-- <ul>
+ <li *ngFor="let aluno of alunos">
+   {{aluno.nome}}
+ </li>
+
+</ul> -->
+
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Sobrenome</th>
+      <th scope="col">Telefone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr  *ngFor="let aluno of alunos">
+      <th scope="row">{{aluno.id}}</th>
+      <td>{{aluno.nome}}</td>
+      <td>{{aluno.sobrenome}}</td>
+      <td>{{aluno.telefone}}</td>
+    </tr>
+
+  </tbody>
+</table>
+

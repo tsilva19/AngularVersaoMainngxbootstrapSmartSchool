@@ -1,0 +1,26 @@
+<app-titulo [titulo]="title"></app-titulo>
+<!-- 
+<ul>
+ <li *ngFor="let professor of professores">
+   {{professor.nome}}
+ </li>
+
+</ul> -->
+
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Disciplina</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr  *ngFor="let prof of professores">
+      <th scope="row">{{prof.id}}</th>
+      <td>{{prof.nome}}</td>
+      <td>{{prof.disciplina}}</td>
+    </tr>
+
+  </tbody>
+</table>
